@@ -17,11 +17,9 @@ public class Task5 {
         BufferedReader inReader = new BufferedReader(new InputStreamReader(System.in));
         PrintWriter outWriter = new PrintWriter(System.out);
         String line = inReader.readLine();
-        //outWriter.println(line);
         while (line != null) {
             StringTokenizer st = new StringTokenizer(line);
             String command = st.nextToken();
-            //outWriter.println(command);
             if (command.equals("quit")) {
                 break;
             } else if (command.equals("state")) {
