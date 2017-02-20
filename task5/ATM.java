@@ -9,7 +9,7 @@ public class ATM {
 
     private int availableSum = 0;
     private final static int[] AVAILABLE_DENOMINATIONS = new int[]{1, 3, 5, 10, 25, 50, 100, 500, 1000, 5000};
-    private Map<Integer, Integer> amounts = new HashMap<>();
+    private Map<Integer, Integer> amounts = new TreeMap<>(Collections.reverseOrder());
 
     public ATM() {
         for (Integer value : AVAILABLE_DENOMINATIONS)
